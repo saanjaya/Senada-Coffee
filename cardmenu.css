@@ -1,0 +1,157 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    background-color: #16423C;
+}
+.navbar ul li {
+    position: relative; 
+    padding-bottom: 5px;
+    padding-left: 20px;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul li:hover {
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05); 
+    border-radius: 10px; 
+}
+
+.navbar ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: white; 
+    transition: width 0.3s ease; 
+}
+
+.navbar ul li:hover::after {
+    width: 100%; 
+}
+
+
+/*header*/
+.header {
+    position: relative; 
+    height: 280px; 
+    color: white; 
+}
+
+.overlay {
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1; 
+}
+
+header h1, p {
+    position: relative; 
+    z-index: 2; 
+}
+
+.foto {
+    width: 800px ;
+    height: auto;
+}
+
+.fotokartu {
+    width: 55%;
+}
+
+/*pop up nav tampilan mobile
+.popup-nav {
+    position: absolute;
+    top: 60px; 
+    right: 10px; 
+    background-color: #274f80;
+    border: 1px solid #E0E1DD;
+    display: none; 
+    padding: 10px;
+    z-index: 1000; 
+}
+.popup-nav ul {
+    list-style: none;
+    padding: 0;
+}
+.popup-nav li {
+    margin: 5px 0;
+}
+.popup-nav ul li {
+    position: relative; 
+    padding-bottom: 5px; 
+}
+
+.popup-nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease; 
+}
+    
+
+.popup-nav ul li:hover::after {
+    width: 100%;
+}
+*/
+.navbar-toggler {
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+}
+
+.navbar-toggler .line {
+    display: block;
+    width: 25px; 
+    height: 3px; 
+    background-color: #ffffff; 
+    margin: 4px 0; 
+    transition: 0.4s; 
+}
+
+.card {
+    background-color: #16423C;
+    height: 400px; 
+
+    color: #ffffff;
+}
+.card:hover {
+    box-shadow: 0px 4px 15px darkslategray; 
+    transform: scale(1.05); 
+}
+
+.captionnya {
+    font-size: smaller;
+    font-style: italic;
+    
+}
+
+.container2 {
+    color: #ffffff;
+}
+
+.btn {
+    background-color: rgb(39, 83, 83);
+}
+
+footer {
+    background-color: #16423C;
+    color: #ffffff;
+}
+.home {
+    background-color: #E9EFEC;
+}
+.judul {
+    color: #ffffff;
+}
